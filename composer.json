@@ -1,0 +1,40 @@
+{
+  "name": "xpd1437/elastic",
+  "description": "Use SQL statements to query elastic",
+  "keywords": [
+    "elastic",
+    "laravel",
+    "sql",
+    "orm",
+    "php"
+  ],
+  "homepage": "https://github.com/xpd1437/elastic",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "xpd1437",
+      "email": "xpd1437@126.cn"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": "^5.3|^6.0",
+    "elasticsearch/elasticsearch": "~6.0"
+  },
+  "autoload": {
+    "files": [
+    ],
+    "psr-4": {
+      "Xpd1437\\Elastic\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Xpd1437\\Elastic\\LaravelServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  }
+}
