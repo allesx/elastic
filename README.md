@@ -3,7 +3,6 @@
 
 [![Latest Stable Version](https://poser.pugx.org/xpd1437/elastic/v/stable)](https://packagist.org/packages/xpd1437/elastic)
 [![License](https://poser.pugx.org/xpd1437/elastic/license)](https://packagist.org/packages/xpd1437/elastic)
-[![StyleCI](https://github.styleci.io/repos/100927763/shield?branch=master)](https://github.styleci.io/repos/100927763)
 
 ## Version Matrix
 
