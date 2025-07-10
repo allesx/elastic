@@ -1,12 +1,12 @@
-# Xpd1437 Elastic
+# Allesx Elastic
 
 
-[![Latest Stable Version](https://poser.pugx.org/xpd1437/elastic/v/stable)](https://packagist.org/packages/xpd1437/elastic)
-[![License](https://poser.pugx.org/xpd1437/elastic/license)](https://packagist.org/packages/xpd1437/elastic)
+[![Latest Stable Version](https://poser.pugx.org/allesx/elastic/v/stable)](https://packagist.org/packages/allesx/elastic)
+[![License](https://poser.pugx.org/allesx/elastic/license)](https://packagist.org/packages/allesx/elastic)
 
 ## Version Matrix
 
-| Elastic Version | xpd1437/elastic Branch |
+| Elastic Version | allesx/elastic Branch |
 | --------------------- | ------------------------ |
 | >= 6.0                | 1.*                      |
 | >= 5.0, < 6.0         | 0.*                      |
@@ -16,7 +16,7 @@
 You can install the package via composer:
 
 ```
-composer require xpd1437/elastic
+composer require allesx/elastic
 ```
 
 ## Laravel
@@ -25,14 +25,14 @@ Modify ``config / app.php``
 
 ```
 'providers' => [
-    Xpd1437\Elastic\LaravelServiceProvider::class,
+    Allesx\Elastic\LaravelServiceProvider::class,
 ]
 
 ```
 
 If you'd like to make configuration changes in the configuration file you can pubish it with the following Aritsan command:
 ```
-php artisan vendor:publish --provider="Xpd1437\Elastic\LaravelServiceProvider"
+php artisan vendor:publish --provider="Allesx\Elastic\LaravelServiceProvider"
 ```
 
 
@@ -43,7 +43,7 @@ php artisan vendor:publish --provider="Xpd1437\Elastic\LaravelServiceProvider"
 
 ```php
 
-Route::get('test/create',function(\Xpd1437\Elastic\Builder $builder){
+Route::get('test/create',function(\Allesx\Elastic\Builder $builder){
     $result = $builder->index('index')->type('type')->create([
 		'key' => 'value',
     ]);
@@ -56,7 +56,7 @@ Route::get('test/create',function(\Xpd1437\Elastic\Builder $builder){
 
 ```php
 
-Route::get('test/create',function(\Xpd1437\Elastic\Builder $builder){
+Route::get('test/create',function(\Allesx\Elastic\Builder $builder){
     $result = $builder->index('index')->type('type')->update('id',[
 		'key' => 'value2',
     ]);
@@ -69,7 +69,7 @@ Route::get('test/create',function(\Xpd1437\Elastic\Builder $builder){
 
 ```php
 
-Route::get('test/create',function(\Xpd1437\Elastic\Builder $builder){
+Route::get('test/create',function(\Allesx\Elastic\Builder $builder){
     $result = $builder->index('index')->type('type')->delete('id');
     dump($result);
 });
@@ -80,7 +80,7 @@ Route::get('test/create',function(\Xpd1437\Elastic\Builder $builder){
 
 ```php
 
-Route::get('test/create',function(\Xpd1437\Elastic\Builder $builder){
+Route::get('test/create',function(\Allesx\Elastic\Builder $builder){
     $builder = $builder->index('index')->type('type');
 	
 	//SQL:select ... where id = 1 limit 1;
