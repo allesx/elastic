@@ -1,6 +1,6 @@
 <?php
 
-namespace Xpd1437\Elastic;
+namespace Allesx\Elastic;
 
 /**
  * Class Grammar.
