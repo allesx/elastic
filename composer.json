@@ -1,5 +1,5 @@
 {
-  "name": "xpd1437/elastic",
+  "name": "allesx/elastic",
   "description": "Use SQL statements to query elastic",
   "keywords": [
     "elastic",
@@ -8,12 +8,12 @@
     "orm",
     "php"
   ],
-  "homepage": "https://github.com/xpd1437/elastic",
+  "homepage": "https://github.com/allesx/elastic",
   "license": "MIT",
   "authors": [
     {
-      "name": "xpd1437",
-      "email": "xpd1437@126.cn"
+      "name": "allesx",
+      "email": "allesx@126.com"
     }
   ],
   "require": {
@@ -25,13 +25,13 @@
     "files": [
     ],
     "psr-4": {
-      "Xpd1437\\Elastic\\": "src/"
+      "Allesx\\Elastic\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Xpd1437\\Elastic\\LaravelServiceProvider"
+        "Allesx\\Elastic\\LaravelServiceProvider"
       ],
       "aliases": {
       }
